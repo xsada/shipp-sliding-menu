@@ -65,28 +65,41 @@ public class PrincipalActivity extends Activity {
         this.listMenu.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				//Your intent object is null, you need set a intent to this object, 
+				//like in 0 position
 				Intent intent = null;
 				if(position == 0){
 					//action
+				 	//Here you need create the intent
+				 	//LOOK
+				 	//intent = new Intent(this, MyNewActivity.class);
+				 	
 				} else if(position == 1){
 					//action
+					//Here you need create the intent
+				 	//intent = new Intent(this, MyNewActivity2.class);
 				} else if(position == 2){
 					//if activity is this just close menu before verify if menu is open
 					if(open){
 						open = false;
 						MenuEventController.close(context, layout, appName);
 						MenuEventController.closeKeyboard(context, view);
-	            	}
+	            			}
 				} else if(position == 3){
-					//action
+					//Here you need create the intent
+				 	//intent = new Intent(this, MyNewActivity3.class);
 				} else if(position == 4){
-					//action
+					//Here you need create the intent
+				 	//intent = new Intent(this, MyNewActivity4.class);
 				} else if(position == 5){
-					//action
+					//Here you need create the intent
+				 	//intent = new Intent(this, MyNewActivity5.class);
 				} else if(position == 6){
-					//action
+					//Here you need create the intent
+				 	//intent = new Intent(this, MyNewActivity6.class);
 				} else if(position == 7){
-					//action
+					//Here you need create the intent
+				 	//intent = new Intent(this, MyNewActivity7.class);
 				}
 				
 				//Check the position if different of current a intent are started else menu just closed
